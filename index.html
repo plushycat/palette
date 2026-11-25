@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="bgCanvas" aria-hidden="true"></canvas>
+
+    <div class="container">
+        <div class="nav">
+            <h1>Palette</h1>
+        </div>
+
+        <div class="main">
+            <div class="input">
+                <div class="input-header">
+                    <h3>Enter a color</h3>
+                    <span class="or">or</span>
+                    <label class="pick-btn" title="Pick a color">
+                        <span class="pick-dot" id="pickDot"></span>
+                        pick
+                        <input type="color" id="colorPicker" value="#3b82f6">
+                    </label>
+                </div>
+                <input type="text" name="colorInput" id="colorInput" placeholder="#3b82f6" value="#3b82f6">
+                <button type="button" id="colorSubmit">generate</button>
+            </div>
+            <div class="result"></div>
+        </div>
+    </div>
+
+    <script src="fx/three.min.js"></script>
+    <script src="fx/particle-ring.js"></script>
+    <script src="fx/manta.js"></script>
+    <script src="generator.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
